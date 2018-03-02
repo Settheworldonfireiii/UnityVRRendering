@@ -7,7 +7,7 @@
 
 #include <opencv2/opencv.hpp>
 
-#include "Main.h"
+#include "main.h"
 
 // --------------------------------------------------------------------------
 // Include headers for the graphics APIs we support

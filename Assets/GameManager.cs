@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour {
 		cam1Tex.Apply();
 		// Помещаем вновь созданную текстуру на наш канвас.
 		// Да, мы меняем текстуру, заданную в предидущем параграфе
-		GameObject.Find ("/CamerasTextures/Camera1RawImage").GetComponent<RawImage>().texture = cam1Tex;
+		GameObject.Find ("/camTex/RendIma").GetComponent<RawImage>().texture = cam1Tex;
 		// Функции, которые непосредственно передают идентификатор текстуры в плагин
 		#if UNITY_GLES_RENDERER
 		SetTextureOfCam1 (cam1Tex.GetNativeTexturePtr(), cam1Tex.width, cam1Tex.height);
