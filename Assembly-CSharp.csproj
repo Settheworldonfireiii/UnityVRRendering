@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DaGame.cs" />
+     <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\motorScript.cs" />
      <Compile Include="Assets\quadrocopterScript.cs" />
  <Reference Include="Unity.PackageManagerUI.Editor">
