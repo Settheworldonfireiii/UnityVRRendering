@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour {
 		#if UNITY_GLES_RENDERER
 		SetTextureOfCam1 (cam1Tex.GetNativeTexturePtr(), cam1Tex.width, cam1Tex.height);
 		#else
-		SetTextureOfCam1 (cam1Tex.GetNativeTexturePtr()); ф
+		SetTextureOfCam1 (cam1Tex.GetNativeTexturePtr()); 
 		#endif
 	}
 
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour {
 	[DllImport ("__Internal")]
 	#else
 	// Здесь указывается имя подгружаемой динамической библиотеки, в которой лежит плагин
-	[DllImport ("QuadrocopterBrain")]
+	[DllImport ("quadrocopterbrain")]
 	#endif
 	#if UNITY_GLES_RENDERER
 	private static extern void SetTextureOfCam1(System.IntPtr texture, int w, int h);
@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour {
 	#if UNITY_IPHONE && !UNITY_EDITOR
 	[DllImport ("__Internal")]
 	#else
-	[DllImport("QuadrocopterBrain")]
+	[DllImport("quadrocopterbrain")]
 	#endif
 	private static extern IntPtr GetRenderEventFunc();
 
